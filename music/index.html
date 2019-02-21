@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Music</title>
+<meta name="description" content="Relaxing music" />
+<meta name="fragment" content="!">
+<meta name='robots' content='index,follow' />
+<link rel='stylesheet' id='generalStyle-css'  href='style_dark.css' type='text/css' media='all' />
+<link rel='stylesheet' id='modal-css'  href='js/prettyPhoto/css/prettyPhoto.css' type='text/css' media='all' />
+<script type='text/javascript' src='js/jquery-1.7.min.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+<script type='text/javascript' src='js/prettyPhoto/js/jquery.prettyPhoto.js'></script>
+<script type='text/javascript' src='js/jquery.quicksand.js'></script>
+<script type="text/javascript" src="js/jquery.history.js"></script>
+<script type='text/javascript' src="main.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon_dark.ico">
+<script type='text/javascript'>
+var bgTime = 5000;
+var bgPaused=false;
+var menuTime = 600;
+var autoPlay = false;
+var loop = true;
+var twtTime = 3000;
+var prettyTheme = 'dark_square';
+var normalFade = true;
+var frontPage = '';
+var btnSoundURL = '';
+var menuPositionFixed = false;
+
+var videoPaused = false;
+var menuAlwaysOpen = false;
+var bgStretch = true;
+</script>
+<script type='text/javascript' src="js/froogaloop2.min.js"></script>
+</head>
+<body>
+<div id="body-wrapper">
+
+	<div id="bgImage"><div id="bgImageWrapper"></div></div>
+	<div id="bgPattern"></div>
+	<div id="bgText"><h3></h3><div class="subText"></div></div>
+	<div id="content">
+		<div id="contentBox"></div>
+		<div id="contentLoading">
+			<div id="CtLoading">
+				Loading<br/>
+				<img src="images/loading1.gif" width="80" height="10" alt="" />
+			</div>
+		</div>
+	</div>
+
+	<ul id="bgImages">
+
+		<li>
+			<img class="thumb" src="images/logoSmall/1.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/184293723?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Chúng ta không thuộc về nhau</h3>
+			<p>Niềm tin đã mất, giọt nước mắt cuốn kí ức anh chìm sâu. Tìm về nơi đâu, cô đơn đôi chân lạc trôi giữa bầu trời </p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/2.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/197659023?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Lạc Trôi</h3>
+			<p>Người theo hương hoa mây mù giăng lối. Làn sương khói phôi phai đưa bước ai xa rồi.</p>
+		</li>
+		
+		<li>
+			<img class="thumb" src="images/logoSmall/coemcho.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/218413947?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Có em chờ</h3>
+			<p>tình yêu là những ánh sáng lấp lánh đèn vàng thắp lên bên ô cửa nhỏ</p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/3.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/212378540?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Nơi này có anh</h3>
+			<p> Em là ai từ đâu bước đến nơi đây dịu dàng chân phương</p>
+			<p>Em là ai tựa như ánh nắng ban mai ngọt ngào trong sương </p>
+			<p>Ngắm em thật lâu con tim anh yếu mềm </p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/danhchoem.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/72266188?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Dành cho em</h3>
+			<p>Anh vẫn nhớ đến lúc em hé môi cười</p>
+			<p>Hay những lúc vu vơ hờn nghen...</p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/4.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/184293722?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Buông đôi tay nhau ra</h3>
+			<p>Cứ quên anh vậy đi, nhạt nhoà sương tan ái ân mây trôi buồn</p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/5.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/214120557?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Bình yên những phút giây</h3>
+			<p>Sóng vỗ rì rào, ánh nắng dật dìu dang tay ôm trọn thân ta </p>
+			<p>Gió nói thầm thì, cát trắng dịu êm đưa mây bay cuốn ưu phiền </p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/6.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/184293717?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Ấn nút nhớ, thả giấc mơ</h3>
+			<p>Sinh con ra bằng câu hát ru quen thuộc, dìu đôi chân mong con lớn khôn.</p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/7.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/163420509?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Không phải dạng vừa đâu</h3>
+			<p>Ở sau bờ vai là những sầu lo </p>
+			<p>Hình như đuổi theo là những nỗi lo </p>
+			 <p>Vô tư đi cứ bám vào anh nàу, suу tư anh u não cả tháng ngàу, không maу cho em уêu tìm đến phải đúng thằng điên rồ trên khinh khí cầu</p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/8.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/184294379?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Khuôn mặt đáng thương</h3>
+			<p>Đôi môi này đi về ai? Ok đêm nay sẽ là 1 đêm thật tuyệt. Yes, Sir. Sơn Tùng M.T.P</p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/9.png" alt="" />
+			<iframe src="http://player.vimeo.com/video/184294332?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Chắc ai đó sẽ về</h3>
+			<p>Anh tìm nỗi nhớ....Anh tìm quá khứ. Nhớ lắm kí ức anh và em...</p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/10.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/184294333?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Âm thầm bên em</h3>
+			<p>Khi bên anh em thấy điều chi, khi bên anh em thấy điều gì</p>
+		</li>
+
+		<li>
+			<img class="thumb" src="images/logoSmall/11.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/184294331?api=1&amp;title=0&amp;byline=0&amp;portrait=0" videotype="vimeo" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			<h3>Em của ngày hôm qua</h3>
+			<p>Đừng nhìn anh nữa,đôi mắt ngày xưa giờ ở đâu??? </p>
+			<p>Em còn là em? </p>
+			<p>Em đã khác rồi. </p>
+		</li>
+
+
+
+	</ul>
+
+	<div id="menu-container">
+
+		<div id="logo">
+			<img src="images/logo2.png" width="50%" height="50%" title="This Way FullScreen" />
+		</div>
+
+		<div id="mainmenu">
+			<div class="menu-header">
+				<ul id="menu-main-menu" class="menu">
+					<li id="menu-item-1">
+						<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=eziolazy26@gmail.com"><span class="title">Email</span></a>
+					</li>
+					<li id="menu-item-2">
+						<a href="http://facebok.com/eziolazy"><span class="title">Facebook</span></a>
+					</li>
+			</div>
+		</div>
+
+		<div id="menuOpener">Me</div>
+		<div id="menuCloser">CLOSE</div>
+
+	</div>
+
+	<div id="footer">
+		<div id="bgControl">
+			<a class="prev" href="javascript:void(0);" onclick="prevBg()"></a>
+			<a class="play" href="javascript:void(0);" onclick="playBg()"></a>
+			<a class="pause" href="javascript:void(0);" onclick="pauseBg()"></a>
+			<a class="next" href="javascript:void(0);" onclick="nextBg()"></a>
+		</div>
+
+		<div id="share">
+			<ul>
+				
+				<li><a class="tip fb" href="http://www.facebook.com/eziolazy" tip-text="Facebook"></a></li>
+			</ul>
+		</div>
+
+	</div>
+
+</div>
+
+<div id="bodyLoading">
+	<div id="loading">
+		Đang tải<br/>
+		<img src="images/loading1.gif" width="80" height="" alt="loading" />
+	</div>
+</div>
+
+</div>
+</body>
+</html>
